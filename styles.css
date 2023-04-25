@@ -1,2 +1,124 @@
+video::-webkit-media-controls-play-button{
+	visibility:hidden;
+}
 
-/* Your CSS Code here. */
+video::-webkit-media
+
+.wrapper{
+  position: relative;
+}
+
+.progress,.progress__filled{
+  border-radius: 5px;
+  background-color: hsl(0,0%,70%);
+  height: 4px;
+}
+
+.progress{
+  width: 48.2%;
+  position: absolute;
+  bottom: 10%;
+  left: 16px;
+}
+
+.progress__filled{
+  width: 100%;
+}
+
+.player__buttton{
+  background-color: transparent;
+  border-width: 0;
+  color: white;
+  position: absolute;
+  bottom: 12.5%;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.player__buttton:hover, .player__buttton:focus{
+	background-color: hsl(0,0%,20%);
+	border-radius:50%;
+}
+
+.volume-container, .speed-container{
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+  padding: 0.7rem;
+  width: 100px;
+}
+
+.volume-container{
+  position: absolute;
+  bottom: 11.5%;
+  left: 500px;
+}
+
+.speed-container{
+  position: absolute;
+  bottom: 11%;
+  left: 635px;
+}
+
+.volume, .playbackSpeed{
+  -webkit-appearance: none;
+  background: linear-gradient(to right,hsl(0,0%,70%),hsl(0,0%,70%));
+  border-radius: 5px;
+  color: white;
+  height: 5px;
+  width: 70px;
+  opacity: 0;
+}
+
+.volume::-webkit-slider-thumb, .playbackSpeed::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: white;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  appearance: none;
+  opacity: 0;
+}
+
+.volume::-webkit-slider-thumb:hover, .volume::-webkit-slider-thumb:focus{
+  opacity: 1;
+}
+
+.playbackSpeed::-webkit-slider-thumb:hover, .playbackSpeed::-webkit-slider-thumb:focus{
+  opacity: 1;
+}
+
+.volume__buttton, .speed__buttton{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  height: 20px;
+  width: 20px;
+}
+
+.volume__buttton{
+  background-image: url("image/volume.png");
+  background-size: 20px 20px;
+}
+
+.speed__buttton{
+  background-image: url("image/speed.png");
+  background-size: 18px 18px;
+}
+
+.player__button{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+.skip{
+  border: 1px solid hsl(0,0%,70%);
+  border-radius: 5px;
+  background-color: transparent;
+}
